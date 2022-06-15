@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="reloj">
+        <h1>La hora y el clima</h1>
+
+        <p class="fecha"></p>
+        <p class="tiempo"></p>
+        <p class="frase"></p>
+        <h3 class="ciudad"></h3>
+
+    </div>
+    <div class="elclima">
+        
+        <label><b>Seleccione ciudad para ver el clima: </b></label>
+        <select class="select" id="idCiudad" onchange="getClima(this)">
+          <option value="" disabled selected>Seleccione ciudad...</option>
+          <option value="18578">Santiago</option>
+          <option value="18267">Temuco</option>
+          <option value="18266">Valdivia</option>
+          <option value="18577">Valparaiso</option>
+          <option value="18576">Concepcion</option>
+          <option value="135102">Antofagasta</option>
+        </select>
+        <br>
+        <br>
+        <div class="clima">
+            <div class="desc"></div>
+            <div class="temp"></div>
+            <div class="tminmax"></div>
+            <div class="mm"></div>
+        </div>
+        
+        <br>
+        <h3 class="nombre_ciudad"></h3>
+        <br>
+        <div class="xhora">
+          <div class="dos"></div>
+          <div class="cinco"></div>
+          <div class="ocho"></div>
+          <div class="once"></div>
+          <div class="dost"></div>
+          <div class="cincot"></div>
+          <div class="ochot"></div>
+          <div class="oncet"></div>
+          <div class="espacio"></div>
+        </div>
+    </div>
+    <br><br>
+    <p class="pie"></p>
+    <script src="script.js"></script>
+</body>
+</html>

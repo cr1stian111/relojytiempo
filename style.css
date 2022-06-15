@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: #0f3854;
+    background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+    background-size: 100%;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}
+.reloj{
+    font-family: 'Inconsolata', monospace;
+    /*color: #ffffff;*/
+    color: #BFFF00;
+    text-align: center;
+    margin-top: 3%;    
+    text-shadow: 0 0 20px rgba(10,175, 230,1), 0 0 20px rgba(10,175, 230,0) ;
+}
+
+.select{
+    /*font-family: 'Share Tech Mono', monospace;*/
+    font-family: 'Inconsolata', monospace;
+    color: #BFFF00;
+    background-color: #0f3854;
+    border-radius: 5px;
+}
+
+
+.tiempo{
+    letter-spacing: 0.05em;
+    font-size: 80px;
+    padding: 5px 0;
+}
+.fecha{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+.descripcion{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.063rem;
+}
+
+.temperatura{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    text-align: center;
+}
+
+.parent {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: x-large;
+}
+
+.desc { grid-area: 1 / 1 / 2 / 2; }
+.temp { grid-area: 2 / 1 / 3 / 2; }
+.preci { grid-area: 1 / 2 / 2 / 3; }
+.mm { grid-area: 2 / 2 / 3 / 3; }
+
+.clima {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: large;
+    color: #ffffff;
+    
+}
+
+.xhora {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.4fr 0.2fr 1.4fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "dos cinco ocho once"
+    "espacio espacio espacio espacio"
+    "dost cincot ochot oncet";
+}
+
+.dos { grid-area: dos; }
+
+.cinco { grid-area: cinco; }
+
+.ocho { grid-area: ocho; }
+
+.once { grid-area: once; }
+
+.dost { grid-area: dost; }
+
+.cincot { grid-area: cincot; }
+
+.ochot { grid-area: ochot; }
+
+.oncet { grid-area: oncet; }
+
+.espacio { grid-area: espacio; }
+
+
+
+.elclima{
+    font-family: 'Inconsolata', monospace;
+    /*color: #ffffff;*/
+    color: #BFFF00;
+    text-align: center;
+    margin-top: 3%;
+
+    text-shadow: 0 0 20px rgba(10,175, 230,1), 0 0 20px rgba(10,175, 230,0) ;
+}
+
+.elclima > label, select{
+    font-size: large;
+}
+
+.reloj h1{
+    font-size: xx-large;
+}
+
+.pie {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: #BFFF00;
+    font-size: small;
+    color: #ffffff;
+}
