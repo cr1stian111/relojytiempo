@@ -3,7 +3,7 @@ Pagina que muestra la hora, fecha actual, una frase y el tiempo actual (y por ho
 
 **Visualizacion de la página en éste [link](https://cr1stian111.github.io/relojytiempo/)**.
 
-Las frases se obtienen gracias a esta [api](https://github.com/LuisJorgeLozano/FraseDelDia).
+Las frases se obtienen gracias a esta [api](https://github.com/LuisJorgeLozano/FraseDelDia).<br />
 Los datos del clima se obtuvieron gracias a la api de [meteored](https://www.meteored.cl/).
 
 ![image](https://user-images.githubusercontent.com/97992147/173738331-d9355fce-862b-4409-85c4-9a1566bb2060.png)
